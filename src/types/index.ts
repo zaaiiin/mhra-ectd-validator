@@ -24,5 +24,5 @@ export interface ModuleData {
 
 export interface ReportItem {
   item: ChecklistItem;
-  status: 'Missing' | 'Pending QA';
+  status: 'Missing' | 'Present (Pending QA)' | 'QA Verified';
 }
