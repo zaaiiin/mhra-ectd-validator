@@ -31,10 +31,10 @@ export function DeficiencyReport({ reportItems }: DeficiencyReportProps) {
               if (status === 'Missing') {
                 displayStatus = 'Missing';
                 displaySeverity = item.severity === 'red' ? 'RED Blocker' : 'AMBER Warning';
-              } else if (status === 'Pending QA' || status === 'Present (Pending QA)' as string) {
+              } else if (status === 'Present (Pending QA)') {
                 displayStatus = 'Present (Pending QA)';
                 displaySeverity = '-';
-              } else if (status === 'QA Verified' as string) {
+              } else if (status === 'QA Verified') {
                 displayStatus = 'QA Verified';
                 displaySeverity = '-';
               }
